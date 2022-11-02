@@ -1,7 +1,7 @@
 from fastapi import FastAPI
-from .routes import vehicle
+from .routers import vehicles
 
 app = FastAPI()
 
-app.include_router(vehicle.router)
+app.include_router(vehicles.router)
 
