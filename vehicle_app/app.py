@@ -3,6 +3,6 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
-@app.get("/")
+@app.get("/vehicles")
 async def main():
     return {'message': 'Hello World'}
