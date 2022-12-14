@@ -21,8 +21,8 @@ async def get_all_vehicles():
     # print("Check 82", results)
 
     dynamodb = boto3.resource("dynamodb", region_name="us-east-1",
-                              aws_access_key_id='AKIAXLNLFD5Q3G6FUDGG',
-                              aws_secret_access_key='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')
+                              aws_access_key_id='',
+                              aws_secret_access_key='')
     table = dynamodb.Table("vehicles")
     response = table.query(KeyConditionExpression="vehicle_id")
 
